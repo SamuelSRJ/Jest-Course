@@ -1,10 +1,16 @@
 /** @type {import('jest').Config} */
 
+const baseDir = '<rootDir>/src/app/passChecker';
+const baseTestDir = '<rootDir>/src/test/passChecker';
+
 module.exports = {
   testEnvironment: 'node',
   verbose: true,
-  collectCoverage: false,
+  collectCoverage: true,
   collectCoverageFrom: [
-    '<rootDir>/src/app/**/*.ts'
+    `${baseDir}/**/*.ts`
+  ],
+  testMatch: [
+    `${baseTestDir}/**/*.ts`
   ]
 };
