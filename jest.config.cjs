@@ -1,7 +1,7 @@
 /** @type {import('jest').Config} */
 
-const baseDir = '<rootDir>/src/app/passChecker';
-const baseTestDir = '<rootDir>/src/test/passChecker';
+const baseDir = '<rootDir>/src/app/doubles';
+const baseTestDir = '<rootDir>/src/test/doubles';
 
 module.exports = {
   testEnvironment: 'node',

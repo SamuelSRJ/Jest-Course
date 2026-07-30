@@ -4,21 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "typecheck": "tsc --noEmit"
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelSRJ/Jest-Course.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamuelSRJ/Jest-Course/issues"
+  },
+  "homepage": "https://github.com/SamuelSRJ/Jest-Course#readme",
   "devDependencies": {
     "@babel/core": "^8.0.1",
     "@babel/preset-env": "^8.0.2",
     "@babel/preset-typescript": "^8.0.1",
     "@types/jest": "^30.0.0",
-    "@types/node": "^26.1.1",
+    "@types/node": "^26.1.2",
+    "@types/uuid": "^10.0.0",
     "babel-jest": "^30.4.1",
     "jest": "^30.4.2",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
   }
 }
