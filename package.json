@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "ts-node src/app/server_app/Launcher.ts"
   },
   "repository": {
     "type": "git",
@@ -26,9 +27,8 @@
     "@types/uuid": "^10.0.0",
     "babel-jest": "^30.4.1",
     "jest": "^30.4.2",
-    "typescript": "^7.0.2"
-  },
-  "dependencies": {
-    "uuid": "^8.3.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "uuid": "^14.0.1"
   }
 }
