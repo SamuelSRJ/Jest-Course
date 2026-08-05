@@ -7,7 +7,7 @@ export class UserCredentialsDataAccess {
 
     public async addUser(user: Account) {
       const accountId = await this.userCredentialsDataBase.insert(user);
-       return accountId;
+      return accountId;
     }
 
     public async getUserById(id: string){
