@@ -1,7 +1,7 @@
 /** @type {import('jest').Config} */
 
 const baseDir = '<rootDir>/src/app/server_app/';
-const baseTestDir = '<rootDir>/src/test/server_app/';
+const baseTestDir = '<rootDir>/src/test/server_app2/';
 
 module.exports = {
   testEnvironment: 'node',
@@ -11,6 +11,6 @@ module.exports = {
     `${baseDir}/**/*.ts`
   ],
   testMatch: [
-    `${baseTestDir}/**/*.ts`
+    `${baseTestDir}/**/*test.ts`
   ]
 };
