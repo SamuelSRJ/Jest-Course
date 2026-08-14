@@ -14,8 +14,8 @@ describe('Server app integration tests', () => {
     server.startServer();
   });
 
-  afterAll(() => {
-    server.stopServer();
+  afterAll(async () => {
+    await server.stopServer();
   })
 
   const someUser: Account = {
@@ -41,6 +41,7 @@ describe('Server app integration tests', () => {
 
     expect(result.status).toBe(HTTP_CODES.CREATED);
     expect(resultBody.userId).toBeDefined()
+    console.log(`connecting to address: ${process.env.HOST}`)
   })
 
   it('Should register new user with awesomeRequest', async () => {

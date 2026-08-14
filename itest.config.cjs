@@ -1,9 +1,7 @@
 /** @type {import('jest').Config} */
 
-/* Use npm run itest to execute this config */
-
 const baseDir = '<rootDir>/src/app/server_app/';
-const baseTestDir = '<rootDir>/src/test/';
+const baseTestDir = '<rootDir>/src/test/server_app3/';
 
 module.exports = {
   testEnvironment: 'node',
@@ -13,10 +11,7 @@ module.exports = {
     `${baseDir}/**/*.ts`
   ],
   testMatch: [
-    // `${baseTestDir}/**/*test.ts`
-    `${baseTestDir}/server_app/**/*test.ts`,
-    `${baseTestDir}/server_app2/**/*test.ts`,
-    // `!${baseTestDir}/server_app3/**/*test.ts`, (!) to not run
+    `${baseTestDir}/**/*test.ts`
   ],
   setupFiles: [
     '<rootDir>/src/test/server_app3/utils/config.ts'
